@@ -1,3 +1,4 @@
+print('calculadora de idade')
 nome = input(print('digite seu nome: '))
 idade=int(input(('qual é sua idade? ')))
 
