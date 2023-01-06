@@ -1,5 +1,5 @@
 #mini sistema de estoque
-print('                         SISTEMA DE ESTOQUE                      v1.0')
+print('                         SISTEMA DE ESTOQUE                      v2.0')
 produto = input('nome do produto: ')
 categoria = input('categoria do produto: ')
 qtde_produtos = input('quantidade de produtos: ')
@@ -14,6 +14,8 @@ if produto and categoria and qtde_produtos:
     if categoria == 'bebidas':
         if qtde_produtos <= bebidas:
             print ('solicitar {}, á equipe de compras, temos apenas {} unidades em estoque. A quantidade minima é {}'.format(produto, qtde_produtos, bebidas))
+        else:
+            print('')    
     elif categoria == 'limpeza':
         if qtde_produtos <= limpeza:
             print ('solicitar {}, á equipe de compras, temos apenas {} unidades em estoque. A quantidade minima é {}'.format(produto, qtde_produtos, limpeza))
