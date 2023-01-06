@@ -14,12 +14,13 @@ if produto and categoria and qtde_produtos:
     if categoria == 'bebidas':
         if qtde_produtos <= bebidas:
             print ('solicitar {}, á equipe de compras, temos apenas {} unidades em estoque. A quantidade minima é {}'.format(produto, qtde_produtos, bebidas))
-    elif categoria == limpeza:
+    elif categoria == 'limpeza':
         if qtde_produtos <= limpeza:
             print ('solicitar {}, á equipe de compras, temos apenas {} unidades em estoque. A quantidade minima é {}'.format(produto, qtde_produtos, limpeza))
-    elif categoria == alimentos:
-        if qtde_produtos <= alimentos:
-            print ('solicitar {}, á equipe de compras, temos apenas {} unidades em estoque. A quantidade minima é {}'.format(produto, qtde_produtos, alimentos))
+    else:
+        if categoria == 'alimentos':
+            if qtde_produtos <= alimentos:
+                print ('solicitar {}, á equipe de compras, temos apenas {} unidades em estoque. A quantidade minima é {}'.format(produto, qtde_produtos, alimentos))
 else:
     print('preencha corretamente')        
     
